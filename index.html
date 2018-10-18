@@ -16,9 +16,9 @@
 
             1.Заздрите Ви людям , які багатші Вас?
             <br>
-            <input type="radio" name="так" value="1">Так
+            <input type="checkbox" name="так">Так
             <br>
-            <input type="radio" name="ні" value="2">Ні
+            <input type="checkbox" name="ні">Ні
             <br>2.Ненавидите Ви кого -небудь з Ваших родичів ?
             <br>
             <input type="radio" name="так" value="1">Так
@@ -30,27 +30,27 @@
             <br>
             <input type="radio" name="ні" value="2">Ні
             <br>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" required placeholder="Name" name="user_name" >
-            <br>
-            <label for="mail">E-mail:</label>
-            <input type="email" required id="mail" placeholder="E-mail" name="user_email" >
-
-            <br>
-            <label for="tel">Telephone:</label>
-            <input type="tel" required id="tel" placeholder="Tel" name="user_telephon" >
-
-            <br>
             <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required placeholder="Name" name="user_name">
+                <br>
+                <label for="mail">E-mail:</label>
+                <input type="email" required id="mail" placeholder="E-mail" name="user_email">
+
+                <br>
+                <label for="tel">Telephone:</label>
+                <input type="tel" required id="tel" placeholder="Tel" name="user_telephon">
+
+                <br>
+
                 <label for="msg">Message:</label>
                 <textarea id="msg" required placeholder="Message" name="user_message"></textarea>
             </fieldset>
             <input type="submit">
             <input type="reset">
-        </form>
-    </section>
-    <section>
+
+    
+        
         <h2>Вхід на сайт</h2>
         <p> E-mail:
             <input type="Email" required id="Email" placeholder="E-mail" name="login" autofocus></p>
@@ -58,8 +58,22 @@
             <input type="password" required id="pass" placeholder="password" name="pass"></p>
         <input type="submit">
         <input type="reset">
+    
+   
+        <br>Choose the date of your birthday:
+        <input type="date" name="calendar" value="2018-10-19" max="2020-10-19" min="2016-10-19">
+        <input type="submit" value="Відправити">
+    
+    <br>
+        <p>Виберіть Ваше місто:</p>
+        <select name="select2">  
+        <option  value = "a1"> Lviv</option>
+        <option  value = "a2"> Kyiv</option>
+        <option value = "a3"> Rivne</option>
+        <option value = "a4"> Mykholaiv</option>
+    </select>
+    </form>
     </section>
-
 </body>
 
 </html>
